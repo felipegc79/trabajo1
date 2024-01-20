@@ -8,7 +8,7 @@ def generar_contrasena(longitud=8): #se corrigió el nombre y se agregó el tipo
     caracteres = string.ascii_letters + string.digits + string.punctuation
     #Genera una contraseña aleatoria usando la funcion random.choice
     contraseña = ''.join(random.choice(caracteres) for _ in range(longitud))
-    
+    #Devuelve la contraseña creada por la funcion
     return contraseña # palabra return mal escrita
-
+#imprime la contraseña generada
 print(generar_contrasena())
