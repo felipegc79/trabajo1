@@ -1,9 +1,14 @@
-import rando
+#libreria de aleatoriedad
+import random # falta el caracter m
+#libreria de texto
 import string
-
-generar_contraseña(longitud=8):
+#define una funcion llamada generar_contrasena que toma un argumento (longitud) con un valor predeterminado
+def generar_contrasena(longitud=8): #se corrigió el nombre y se agregó el tipo de parametro
+    #Crea una cadena de caracteres que contiene letras mayusculas y minusculas
     caracteres = string.ascii_letters + string.digits + string.punctuation
+    #Genera una contraseña aleatoria usando la funcion random.choice
     contraseña = ''.join(random.choice(caracteres) for _ in range(longitud))
-    retunr contraseña
+    
+    return contraseña # palabra return mal escrita
 
 print(generar_contrasena())
